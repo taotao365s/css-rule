@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Rule Plugin Test</title>
+</head>
+<body>
+<div>This is a div <span>and this is a span inside the div.</span></div>
+<p>This is a paragraph <span class="two">and this is a span inside the paragraph.</span></p>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="../jquery.css-rule.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$.cssRule('div', 'color: blue;');
+	$.cssRule('span.two', 'font-weight: bold; font-size: 120%;');
+	$.cssRule(['div span', 'p span'], {'text-decoration': 'underline', background: 'yellow'});
+	$.cssRule(['body'], {background: 'silver'});
+});
+</script>
+</body>
+</html>

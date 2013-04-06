@@ -1,0 +1,6 @@
+jQuery CSS Rule
+===============
+
+The CSS Rule function is a jQuery helper function to add CSS rules to a page.  The first argument is the CSS selector, which can be provided as a string or an array of selector strings.  The second argument is the rule set, which can be provided as a string or an object.  Note that jQuery CSS properties that replace a hyphen with camelCase are not supported.
+
+Based on code at: http://jsfiddle.net/doktormolle/ubDDd/
